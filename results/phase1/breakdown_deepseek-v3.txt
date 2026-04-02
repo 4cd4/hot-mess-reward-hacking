@@ -1,0 +1,1658 @@
+================================================================================
+  PHASE 1 BASELINE RESULTS: DeepSeek V3
+================================================================================
+
+  SUMMARY
+  ----------------------------------------------------------------------------
+  Overall accuracy:   64.3%
+  Total questions:    398
+  Samples/question:   5 (temperature=1.0)
+
+  Difficulty split:
+    Easy   (4-5/5 correct):  215  (54%)
+    Medium (2-3/5 correct):   82  (21%)
+    Hard   (0-1/5 correct):  101  (25%)
+
+  By source:
+    MMLU    200 questions   80.1% accuracy
+    GPQA    198 questions   48.4% accuracy
+
+  ----------------------------------------------------------------------------
+  ACCURACY BY SUBJECT
+  ----------------------------------------------------------------------------
+
+  Subject                                         Acc  Total  Easy   Med  Hard
+  ────────────────────────────────────────────  ─────  ─────  ────  ────  ────
+  Condensed Matter Physics [GPQA]                100%      1     1     0     0
+  college_biology [MMLU]                         100%     10    10     0     0
+  Optics and Acoustics [GPQA]                    100%      1     1     0     0
+  college_physics [MMLU]                          94%     10     9     1     0
+  professional_medicine [MMLU]                    89%     23    20     2     1
+  college_computer_science [MMLU]                 89%      7     6     0     1
+  professional_accounting [MMLU]                  88%     20    17     1     2
+  Relativistic Mechanics [GPQA]                   86%      7     5     2     0
+  college_medicine [MMLU]                         78%     10     8     0     2
+  High-energy particle physics [GPQA]             76%     14     9     4     1
+  professional_law [MMLU]                         75%    105    75     8    22
+  college_mathematics [MMLU]                      74%     10     6     3     1
+  Molecular Biology [GPQA]                        61%     15     8     3     4
+  Physics (general) [GPQA]                        61%     19     9     6     4
+  college_chemistry [MMLU]                        56%      5     2     1     2
+  Quantum Mechanics [GPQA]                        53%     25    10     6     9
+  Electromagnetism and Photonics [GPQA]           47%      6     1     4     1
+  Chemistry (general) [GPQA]                      46%     20     6     7     7
+  Astrophysics [GPQA]                             40%     13     3     2     8
+  Organic Chemistry [GPQA]                        34%     72     9    30    33
+  Genetics [GPQA]                                 25%      4     0     2     2
+  Inorganic Chemistry [GPQA]                      20%      1     0     0     1
+
+  ----------------------------------------------------------------------------
+  EASY QUESTIONS (4-5/5 correct — model reliably knows the answer)
+  215 questions
+  ----------------------------------------------------------------------------
+
+  Q3    100%  ans=D  D:5*
+        [MMLU] college_computer_science
+        Which of the following statements about datagrams sent by a node ...
+
+  Q4    100%  ans=C  C:5*
+        [MMLU] professional_accounting
+        Each of the following would be considered a Level 2 observable in...
+
+  Q6     80%  ans=C  B:1   C:4*
+        [GPQA] Organic Chemistry
+        S)-4-hydroxycyclohex-2-en-1-one is treated with tert-Butyldimethy...
+
+  Q7    100%  ans=D  D:5*
+        [MMLU] college_computer_science
+        Which of the following algorithms has running time Θ(n^2) in the ...
+
+  Q8    100%  ans=C  C:5*
+        [MMLU] college_medicine
+        A segment of DNA from a lab mouse is determined to be 5’ – GGATCC...
+
+  Q9    100%  ans=D  D:5*
+        [MMLU] professional_medicine
+        A 40-year-old male presents to the office with symptoms of odynop...
+
+  Q11   100%  ans=D  D:5*
+        [MMLU] professional_law
+        A contractor agreed to remodel a homeowner's garage for $5,000. J...
+
+  Q16   100%  ans=C  C:5*
+        [MMLU] college_medicine
+        A study examined admissions to exceptionally selective colleges. ...
+
+  Q17   100%  ans=C  C:5*
+        [MMLU] college_computer_science
+        The hit ratio of a cache memory is the percentage of accesses (re...
+
+  Q18   100%  ans=C  C:5*
+        [MMLU] professional_law
+        The buyer asked a manufacturer to make him 100,000 widgets for $1...
+
+  Q25   100%  ans=D  D:5*
+        [MMLU] professional_law
+        The President may appoint which of the following with the advice ...
+
+  Q27    80%  ans=D  A:1   D:4*
+        [GPQA] Molecular Biology
+        ChIP-seq on a PFA-fixed sample with an antibody to the IKAROS tra...
+
+  Q28   100%  ans=A  A:5*
+        [MMLU] professional_accounting
+        Which of the following defenses is likely to be successful in a s...
+
+  Q29   100%  ans=A  A:5*
+        [MMLU] professional_accounting
+        Accrual accounting involves accruals and deferrals. Which of the ...
+
+  Q30   100%  ans=D  D:5*
+        [MMLU] college_physics
+        By definition, the electric displacement current through a surfac...
+
+  Q31   100%  ans=A  A:5*
+        [MMLU] professional_accounting
+        An entity prepares its financial statements on the income tax bas...
+
+  Q32    80%  ans=A  A:4*  C:1 
+        [GPQA] Quantum Mechanics
+        If uncertainty in space of electron's location, which is travelli...
+
+  Q33   100%  ans=B  B:5*
+        [GPQA] Chemistry (general)
+        What is the concentration of calcium ions in a solution containin...
+
+  Q36   100%  ans=C  C:5*
+        [GPQA] Quantum Mechanics
+        An electron is in the spin state (3i, 4). Find the expectation va...
+
+  Q38   100%  ans=C  C:5*
+        [MMLU] professional_law
+        Late one night, co-defendants broke into a warehouse and proceede...
+
+  Q39   100%  ans=D  D:5*
+        [MMLU] professional_law
+        A victim was standing on a street corner waiting to make a drug b...
+
+  Q45   100%  ans=B  B:5*
+        [MMLU] professional_law
+        Two days before his home was to be sold at a foreclosure sale, a ...
+
+  Q47   100%  ans=A  A:5*
+        [MMLU] professional_law
+        A plaintiff sued the insurer of her home after the insurer denied...
+
+  Q50   100%  ans=D  D:5*
+        [MMLU] professional_law
+        Several persons together stole a painting from an art museum. One...
+
+  Q51   100%  ans=A  A:5*
+        [MMLU] college_mathematics
+        Suppose today is Wednesday. What day of the week will it be 10^(1...
+
+  Q52    80%  ans=D  A:1   D:4*
+        [GPQA] Physics (general)
+        Large clouds of neutral hydrogen in deep space absorb the light f...
+
+  Q55   100%  ans=C  C:5*
+        [MMLU] professional_law
+        A man and a woman were competing in an illegal drag race. Both of...
+
+  Q56   100%  ans=D  D:5*
+        [GPQA] Chemistry (general)
+        You are analyzing a small peptidic compound that has been chemica...
+
+  Q59   100%  ans=C  C:5*
+        [MMLU] professional_medicine
+        A 32-year-old man comes to the physician because he has had diffi...
+
+  Q60   100%  ans=D  D:5*
+        [GPQA] Organic Chemistry
+        Compounds that have the same molecular formula but are different ...
+
+  Q61   100%  ans=D  D:5*
+        [MMLU] professional_accounting
+        What is the value of the tax shield if the value of the firm is $...
+
+  Q62   100%  ans=A  A:5*
+        [GPQA] Physics (general)
+        While solving higher dimensional heat equations subject to suitab...
+
+  Q64   100%  ans=C  C:5*
+        [GPQA] Quantum Mechanics
+        Consider this density matrix  $\rho=\frac{1}{2}\left(\left|0\righ...
+
+  Q65   100%  ans=C  C:5*
+        [MMLU] professional_accounting
+        Best County's capital projects fund had the following receipts du...
+
+  Q67   100%  ans=B  B:5*
+        [GPQA] Condensed Matter Physics
+        The Mott-Gurney equation describes the dark current (J) versus vo...
+
+  Q68   100%  ans=D  D:5*
+        [GPQA] Organic Chemistry
+        Select the suitable reagents for the following mentioned reaction...
+
+  Q69    80%  ans=D  A:1   D:4*
+        [MMLU] professional_law
+        A taxpayer was notified by the government that her individual inc...
+
+  Q71   100%  ans=C  C:5*
+        [MMLU] college_mathematics
+        A ladder 9 meters in length is leaning against a vertical wall on...
+
+  Q73   100%  ans=C  C:5*
+        [MMLU] professional_law
+        The police requested consent from a wife to search the mutual bed...
+
+  Q75   100%  ans=B  B:5*
+        [MMLU] college_computer_science
+        Of the following, which best characterizes computers that use mem...
+
+  Q76   100%  ans=A  A:5*
+        [MMLU] professional_law
+        A bank loaned a company $1,500,000 for the manufacture of a widge...
+
+  Q77   100%  ans=B  B:5*
+        [MMLU] professional_law
+        An owner ran a sporting goods store that specialized in hunting a...
+
+  Q78   100%  ans=B  B:5*
+        [MMLU] professional_accounting
+        For an individual business owner, which of the following would ty...
+
+  Q80    80%  ans=D  A:1   D:4*
+        [MMLU] professional_law
+        A defendant and his friend were down on their luck. They decided ...
+
+  Q81   100%  ans=C  C:5*
+        [MMLU] college_medicine
+        Glycolysis is the name given to the pathway involving the convers...
+
+  Q82   100%  ans=D  D:5*
+        [GPQA] Quantum Mechanics
+        The state of a system at time t is given by the column matrix hav...
+
+  Q83    80%  ans=C  B:1   C:4*
+        [MMLU] professional_medicine
+        A 44-year-old woman with a 10-year history of arthritis comes to ...
+
+  Q84   100%  ans=C  C:5*
+        [MMLU] college_medicine
+        As a result of substance abuse throughout adolescence, a young ad...
+
+  Q86   100%  ans=B  B:5*
+        [MMLU] professional_law
+        A city ordinance forbids washing vehicles parked on city streets....
+
+  Q87   100%  ans=A  A:5*
+        [MMLU] college_physics
+        Protons used in cancer therapy are typically accelerated to about...
+
+  Q88   100%  ans=C  C:5*
+        [MMLU] professional_law
+        A sister and brother own a ranch as joint tenants. If the sister ...
+
+  Q90   100%  ans=A  A:5*
+        [MMLU] college_biology
+        Stabilization of the unique coiled structure of an alpha helix in...
+
+  Q91    80%  ans=C  B:1   C:4*
+        [GPQA] Organic Chemistry
+        Substances 1-6 undergo an electrophilic substitution reaction wit...
+
+  Q93   100%  ans=B  B:5*
+        [MMLU] professional_law
+        Defendant is on trial. Which of the following, if occurs, would N...
+
+  Q99   100%  ans=A  A:5*
+        [GPQA] High-energy particle physics
+        The Interaction between the bosonic field X and fermions is given...
+
+  Q101  100%  ans=D  D:5*
+        [MMLU] college_medicine
+        Karen is a college student working on developing a stronger sense...
+
+  Q102  100%  ans=D  D:5*
+        [MMLU] college_biology
+        A cell nucleus contains which of the following? I. DNA II. Protei...
+
+  Q105  100%  ans=D  D:5*
+        [GPQA] Quantum Mechanics
+        A common approximation made in many-body nuclear calculations of ...
+
+  Q107   80%  ans=C  A:1   C:4*
+        [MMLU] professional_medicine
+        A previously healthy 22-year-old college student is brought to th...
+
+  Q109  100%  ans=A  A:5*
+        [MMLU] professional_accounting
+        Aston and Becker are equal partners in AB Partnership. In the tax...
+
+  Q110  100%  ans=C  C:5*
+        [GPQA] High-energy particle physics
+        Given the following Lagrangian  \mathcal{L}_{int}=\kappa\bar{\psi...
+
+  Q111  100%  ans=D  D:5*
+        [MMLU] professional_medicine
+        A 10-month-old boy is brought to the physician because of a 4-day...
+
+  Q113  100%  ans=A  A:5*
+        [GPQA] Physics (general)
+        Let us assume stars are uniformly distributed in the sky. In this...
+
+  Q114  100%  ans=D  D:5*
+        [MMLU] college_computer_science
+        Which of the following is NOT a reasonable justification for choo...
+
+  Q115  100%  ans=B  B:5*
+        [MMLU] professional_law
+        A writer sent a four-page synopsis of an idea for a new televisio...
+
+  Q116  100%  ans=D  D:5*
+        [MMLU] professional_law
+        A resident in an exclusive residential area is a marine biologist...
+
+  Q118  100%  ans=A  A:5*
+        [MMLU] college_chemistry
+        Redox enzyme catalysis involves the cyclic oxidation and reductio...
+
+  Q119  100%  ans=B  B:5*
+        [MMLU] professional_law
+        A state was facing a fiscal problem. In order to raise funds, the...
+
+  Q120  100%  ans=D  D:5*
+        [MMLU] professional_law
+        In a secluded county, where prejudice festers and discrimination ...
+
+  Q122  100%  ans=D  D:5*
+        [GPQA] High-energy particle physics
+        Which of the following (effective) particles is not associated wi...
+
+  Q125  100%  ans=C  C:5*
+        [MMLU] professional_law
+        A city has adopted ordinance 172 which provides:"Section 1: It sh...
+
+  Q126   80%  ans=C  C:4*  D:1 
+        [GPQA] Physics (general)
+        Two quantum states with energies E1 and E2 have a lifetime of 10^...
+
+  Q131  100%  ans=D  D:5*
+        [MMLU] college_physics
+        If the total energy of a particle of mass m is equal to twice its...
+
+  Q132  100%  ans=C  C:5*
+        [GPQA] Physics (general)
+        Astronomers are studying a system of five exoplanets with circula...
+
+  Q133  100%  ans=A  A:5*
+        [GPQA] Chemistry (general)
+        You have prepared an unknown compound. To identify the product, y...
+
+  Q136   80%  ans=A  A:4*  C:1 
+        [MMLU] professional_law
+        A producer of widgets contacted a manufacturer of boxes about the...
+
+  Q143  100%  ans=D  D:5*
+        [MMLU] college_biology
+        Which of the following statements about excretory organs is true?...
+
+  Q144  100%  ans=D  D:5*
+        [MMLU] professional_medicine
+        A 57-year-old woman comes to the physician because of an 8-week h...
+
+  Q145  100%  ans=B  B:5*
+        [MMLU] professional_law
+        On September 15, a card shop sent the following fax to a printing...
+
+  Q151  100%  ans=B  B:5*
+        [MMLU] professional_law
+        On January 1, an employee is hired to work for an employer for on...
+
+  Q152  100%  ans=D  D:5*
+        [MMLU] professional_law
+        A state has enacted a statute imposing a tax on the extraction of...
+
+  Q153   80%  ans=C  A:1   C:4*
+        [GPQA] High-energy particle physics
+        Your colleague has devised a new quantum field theory on four-dim...
+
+  Q154  100%  ans=C  C:5*
+        [MMLU] professional_law
+        A student at a private university was receiving financial aid fro...
+
+  Q155  100%  ans=C  C:5*
+        [MMLU] professional_law
+        A man who was separated but never divorced from his first wife, m...
+
+  Q156  100%  ans=D  D:5*
+        [MMLU] professional_medicine
+        A 54-year-old man comes to the physician because of episodes of f...
+
+  Q158  100%  ans=D  D:5*
+        [MMLU] professional_accounting
+        Which of the following factors most likely would heighten an audi...
+
+  Q159   80%  ans=C  C:4*  D:1 
+        [GPQA] Molecular Biology
+        You tag the inner capsid proteins of rotavirus with a GFP and del...
+
+  Q160  100%  ans=C  C:5*
+        [GPQA] Molecular Biology
+        A eukaryotic cell evolved a mechanism to turn macromolecular buil...
+
+  Q161  100%  ans=D  D:5*
+        [MMLU] professional_medicine
+        A 24-year-old woman comes to the physician for a follow-up examin...
+
+  Q163  100%  ans=D  D:5*
+        [MMLU] professional_law
+        Doug Dogman had a domesticated golden retriever named Rover. Rove...
+
+  Q166   80%  ans=C  C:4*  D:1 
+        [GPQA] Quantum Mechanics
+        Consider two electrons are in p orbital angular momentum state. I...
+
+  Q167  100%  ans=D  D:5*
+        [GPQA] High-energy particle physics
+        Which of the following physical theories never requires regulariz...
+
+  Q169  100%  ans=D  D:5*
+        [MMLU] professional_law
+        At trial, during the plaintiff's case-in-chief, the plaintiff cal...
+
+  Q171  100%  ans=B  B:5*
+        [MMLU] professional_law
+        An investor and a developer own adjoining lots in the central por...
+
+  Q173  100%  ans=D  D:5*
+        [GPQA] Relativistic Mechanics
+        Two astronauts of masses 2m and 3m travel at relativistic speeds ...
+
+  Q174  100%  ans=A  A:5*
+        [MMLU] professional_law
+        Police officers had probable cause to believe that a man had comm...
+
+  Q176  100%  ans=C  C:5*
+        [MMLU] professional_accounting
+        Prior to the issuance of its December 31 financial statements Sta...
+
+  Q179  100%  ans=C  C:5*
+        [MMLU] professional_law
+        While on a camping trip, a defendant became intoxicated and decid...
+
+  Q182   80%  ans=A  A:4*  B:1 
+        [MMLU] professional_law
+        There is a voting law that is going to be reviewed by the court. ...
+
+  Q183   80%  ans=B  A:1   B:4*
+        [GPQA] Relativistic Mechanics
+        An intelligent civilization in the Large Magellanic Cloud has eng...
+
+  Q184  100%  ans=A  A:5*
+        [MMLU] professional_law
+        A mechanic agreed in writing to make repairs to a landscaper's tr...
+
+  Q185  100%  ans=C  C:5*
+        [MMLU] college_physics
+        Which of the following is true about any system that undergoes a ...
+
+  Q187  100%  ans=A  A:5*
+        [MMLU] professional_law
+        Under the authority of a federal voting rights statute, some stat...
+
+  Q188  100%  ans=C  C:5*
+        [GPQA] Molecular Biology
+        There has been an outbreak of an viral infectious disease in your...
+
+  Q189  100%  ans=C  C:5*
+        [MMLU] professional_law
+        A landlord was the owner of a large, high-rise apartment building...
+
+  Q190   80%  ans=A  A:4*  B:1 
+        [GPQA] Electromagnetism and Photonics
+        A vector field f(r) falls off radially as 1/r^2 from the origin, ...
+
+  Q192  100%  ans=D  D:5*
+        [MMLU] professional_law
+        A man, his brother and his friend all discuss murdering the man's...
+
+  Q193  100%  ans=D  D:5*
+        [MMLU] college_medicine
+        Fatty acids are transported into the mitochondria bound to:...
+
+  Q195  100%  ans=A  A:5*
+        [MMLU] college_biology
+        To prevent desiccation and injury, the embryos of terrestrial ver...
+
+  Q199  100%  ans=D  D:5*
+        [MMLU] professional_law
+        A hot-air balloon touring company operated near a golf course. Th...
+
+  Q200  100%  ans=B  B:5*
+        [MMLU] college_medicine
+        Which of the following is true?...
+
+  Q201  100%  ans=A  A:5*
+        [MMLU] professional_law
+        A university fired its head basketball coach after a series of lo...
+
+  Q202  100%  ans=A  A:5*
+        [GPQA] Physics (general)
+        We want to observe a decay of a single atom (atomic nucleus). It ...
+
+  Q203  100%  ans=B  B:5*
+        [MMLU] professional_law
+        A security guard relocated to a state which required all persons ...
+
+  Q204  100%  ans=B  B:5*
+        [MMLU] professional_law
+        A landlord was the owner of a vacant warehouse. On May 1, the lan...
+
+  Q206  100%  ans=D  D:5*
+        [GPQA] Molecular Biology
+        In gametogenesis, the germline undergoes two cycles of meiosis to...
+
+  Q207  100%  ans=A  A:5*
+        [GPQA] High-energy particle physics
+        X is a meson resonance. What is the mean decay distance? Knowing ...
+
+  Q209  100%  ans=B  B:5*
+        [MMLU] professional_medicine
+        A 27-year-old woman, gravida 2, para 1, at 12 weeks' gestation co...
+
+  Q210   80%  ans=A  A:4*  D:1 
+        [GPQA] Physics (general)
+        An electron is moving along the horizontal axis from the left wit...
+
+  Q218  100%  ans=D  D:5*
+        [MMLU] professional_law
+        The board of a state university has adopted the following rule co...
+
+  Q219  100%  ans=D  D:5*
+        [GPQA] Astrophysics
+        In a specific region of the sky, astronomers have observed that t...
+
+  Q220  100%  ans=C  C:5*
+        [MMLU] professional_law
+        A purse snatcher ran up to a woman, grabbed her purse and ran off...
+
+  Q225  100%  ans=A  A:5*
+        [MMLU] college_chemistry
+        Which of the following experimental observations were explained b...
+
+  Q227  100%  ans=B  B:5*
+        [MMLU] professional_law
+        A farmer raked up some leaves on his property, put them into a me...
+
+  Q228  100%  ans=D  D:5*
+        [MMLU] college_physics
+        Light of variable frequency shines on the metal surface of a phot...
+
+  Q229  100%  ans=C  C:5*
+        [GPQA] Physics (general)
+        Researchers are attempting to detect transits of two Earth-like p...
+
+  Q234  100%  ans=A  A:5*
+        [GPQA] Quantum Mechanics
+        For a magnetic field \vec{B}, parallel to Oz, with small values o...
+
+  Q235  100%  ans=D  D:5*
+        [MMLU] professional_medicine
+        A 46-year-old woman with active ankylosing spondylitis comes to t...
+
+  Q237   80%  ans=C  A:1   C:4*
+        [GPQA] Organic Chemistry
+        trans-cinnamaldehyde was treated with methylmagnesium bromide, fo...
+
+  Q241  100%  ans=D  D:5*
+        [GPQA] Quantum Mechanics
+        A spin-half particle is in a linear superposition 0.5|\uparrow\ra...
+
+  Q242  100%  ans=A  A:5*
+        [MMLU] professional_law
+        A state statute provides that an illegitimate child may not inher...
+
+  Q243  100%  ans=D  D:5*
+        [MMLU] college_physics
+        The rest mass of a particle with total energy 5.0 GeV and momentu...
+
+  Q244  100%  ans=D  D:5*
+        [MMLU] professional_accounting
+        A bond with a five-year maturity, paying 8% coupons and with a fa...
+
+  Q246  100%  ans=D  D:5*
+        [MMLU] professional_law
+        Two companies, a construction company and a landscaping firm, got...
+
+  Q248  100%  ans=C  C:5*
+        [MMLU] professional_accounting
+        What is the process by which products and services of a business ...
+
+  Q249  100%  ans=D  D:5*
+        [MMLU] professional_medicine
+        A 78-year-old woman is admitted to the hospital for replacement o...
+
+  Q250  100%  ans=C  C:5*
+        [MMLU] professional_law
+        A state built a racetrack that was specially designed and constru...
+
+  Q252  100%  ans=C  C:5*
+        [MMLU] professional_law
+        A homeowner had a beautiful beach house overlooking the bay. Alth...
+
+  Q253  100%  ans=B  B:5*
+        [MMLU] professional_law
+        Congress recently enacted a statute that prohibits racial discrim...
+
+  Q254  100%  ans=A  A:5*
+        [MMLU] professional_law
+        Within the last two years, the number of cases coming before the ...
+
+  Q255  100%  ans=C  C:5*
+        [MMLU] college_biology
+        Which of the following is the correct anatomical order of structu...
+
+  Q257   80%  ans=A  A:4*  C:1 
+        [MMLU] college_mathematics
+        Let f(x,y) = x^2 - 2xy + y^3 for all real x and y. Which of the f...
+
+  Q258   80%  ans=C  A:1   C:4*
+        [GPQA] Astrophysics
+        Astronomers are studying a system of three exoplanets (Planet1, P...
+
+  Q261   80%  ans=D  A:1   D:4*
+        [GPQA] High-energy particle physics
+        Consider this annihilation process  $p+\bar{p}\rightarrow2A^{+}+2...
+
+  Q267  100%  ans=D  D:5*
+        [GPQA] Organic Chemistry
+        In the lab, a chemist discovers an unnamed bottle with a white so...
+
+  Q270   80%  ans=D  A:1   D:4*
+        [MMLU] professional_law
+        After watching a television program about archery, a 15-year-old ...
+
+  Q273   80%  ans=B  B:4*  C:1 
+        [MMLU] professional_law
+        A property owner who owner her property in fee simple leased a th...
+
+  Q274  100%  ans=D  D:5*
+        [MMLU] college_physics
+        The driver of a police car hears an echo of the car’s siren from ...
+
+  Q276  100%  ans=D  D:5*
+        [MMLU] college_biology
+        Mitochondria isolated and placed in a buffered solution with a lo...
+
+  Q277  100%  ans=C  C:5*
+        [MMLU] professional_accounting
+        Pine Co. purchased land for $450000 as a factory site. An existin...
+
+  Q280   80%  ans=D  A:1   D:4*
+        [GPQA] Organic Chemistry
+        The reaction between cyclohexanone and piperidine can result in t...
+
+  Q281  100%  ans=A  A:5*
+        [MMLU] professional_law
+        A criminal defendant went to trial and was convicted. After exhau...
+
+  Q283  100%  ans=D  D:5*
+        [MMLU] professional_medicine
+        A 37-year-old Anglo-American man is admitted to the hospital for ...
+
+  Q284  100%  ans=C  C:5*
+        [MMLU] professional_accounting
+        Dari Inc. guaranteed the debt of a related party. In December Dar...
+
+  Q285  100%  ans=B  B:5*
+        [GPQA] Relativistic Mechanics
+        A supernova occurred in our Galaxy. Part of the supernova ejecta ...
+
+  Q287  100%  ans=D  D:5*
+        [MMLU] professional_law
+        A man, a woman, and their son went to their neighbor's house. The...
+
+  Q288  100%  ans=A  A:5*
+        [GPQA] Relativistic Mechanics
+        Particles are collided at the center of a spherical detector prod...
+
+  Q289  100%  ans=B  B:5*
+        [MMLU] professional_law
+        A developer, owner of several hundred acres in a rural county, dr...
+
+  Q291  100%  ans=A  A:5*
+        [GPQA] High-energy particle physics
+        Find KE of product particles in, Pi(+) = mu(+) + nu here Pi(+) is...
+
+  Q294  100%  ans=A  A:5*
+        [MMLU] professional_medicine
+        A sexually active 23-year-old man with multiple sex partners has ...
+
+  Q297  100%  ans=A  A:5*
+        [MMLU] college_computer_science
+        Many cryptographic protocols base their security on assumptions a...
+
+  Q298  100%  ans=D  D:5*
+        [GPQA] Chemistry (general)
+        A chemical reaction for the synthesis of a product containing H+ ...
+
+  Q299  100%  ans=C  C:5*
+        [MMLU] college_physics
+        The speed of light inside of a nonmagnetic dielectric material wi...
+
+  Q301  100%  ans=C  C:5*
+        [MMLU] professional_law
+        A mushroom farmer agreed in a signed writing on January 2 to deli...
+
+  Q303  100%  ans=B  B:5*
+        [MMLU] professional_law
+        A state highway runs through the center of a city's business dist...
+
+  Q308   80%  ans=D  C:1   D:4*
+        [GPQA] Molecular Biology
+        All the following statements about the molecular biology of Sever...
+
+  Q310  100%  ans=D  D:5*
+        [MMLU] professional_law
+        A customer sued a printing company for negligence, claiming that ...
+
+  Q311  100%  ans=C  C:5*
+        [MMLU] professional_law
+        An elderly woman entered a convenience store and tried to cash he...
+
+  Q312  100%  ans=C  C:5*
+        [MMLU] professional_law
+        A federal grand jury was investigating a corporation whose tanker...
+
+  Q313  100%  ans=D  D:5*
+        [MMLU] college_biology
+        In garden peas, the allele for tall plants (D) is completely domi...
+
+  Q316   80%  ans=B  B:4*  D:1 
+        [GPQA] Quantum Mechanics
+        Consider a quantum mechanical system containing a particle of mas...
+
+  Q317   80%  ans=C  A:1   C:4*
+        [GPQA] Chemistry (general)
+        Calculate the enthalpy of neutralization when 500 mL 0.2 M HCl, 3...
+
+  Q321  100%  ans=D  D:5*
+        [MMLU] professional_law
+        Husband and wife conveyed a part of their inherited family farm t...
+
+  Q322   80%  ans=D  C:1   D:4*
+        [MMLU] professional_medicine
+        A 57-year-old man comes to the emergency department because of cr...
+
+  Q323  100%  ans=C  C:5*
+        [GPQA] Molecular Biology
+        "Oh, I know you," the ribonucleoprotein particle says to the nasc...
+
+  Q324  100%  ans=B  B:5*
+        [GPQA] High-energy particle physics
+        Which of the following symmetries must be respected by all operat...
+
+  Q326  100%  ans=A  A:5*
+        [MMLU] professional_law
+        A builder wanted to have security systems installed in a series o...
+
+  Q329  100%  ans=B  B:5*
+        [MMLU] professional_law
+        On March 1, 1999 a widower, the sole owner and occupant of a piec...
+
+  Q330  100%  ans=A  A:5*
+        [MMLU] college_mathematics
+        Let V and W be 4-dimensional subspaces of a 7-dimensional vector ...
+
+  Q333  100%  ans=A  A:5*
+        [MMLU] professional_law
+        A woman entered a jewelry store and asked the store's owner if he...
+
+  Q335  100%  ans=C  C:5*
+        [MMLU] college_biology
+        Two xylem plant cell types that provide support and conduct water...
+
+  Q336  100%  ans=D  D:5*
+        [MMLU] professional_medicine
+        A 64-year-old woman comes to the physician because of a 5-month h...
+
+  Q338  100%  ans=C  C:5*
+        [MMLU] professional_law
+        A plaintiff has sued a defendant in a court of the state in which...
+
+  Q339  100%  ans=A  A:5*
+        [GPQA] Chemistry (general)
+        A student regrets that he fell asleep during a lecture in electro...
+
+  Q340  100%  ans=C  C:5*
+        [MMLU] college_biology
+        Many marine birds drink seawater yet maintain their internal osmo...
+
+  Q342  100%  ans=A  A:5*
+        [GPQA] Physics (general)
+         Consider a 1-dimensional relativistic harmonic oscillator with m...
+
+  Q349  100%  ans=A  A:5*
+        [MMLU] professional_accounting
+        Which of the following is an element of a CPA firm's quality cont...
+
+  Q350  100%  ans=D  D:5*
+        [GPQA] Organic Chemistry
+        Your overhear two chemists talking to each other as they leave a ...
+
+  Q351  100%  ans=B  B:5*
+        [MMLU] professional_law
+        In 1981, a devoted conservationist, was the owner of a 100-acre t...
+
+  Q352   80%  ans=A  A:4*  C:1 
+        [GPQA] Organic Chemistry
+        Name reactions in chemistry refer to a specific set of well-known...
+
+  Q355  100%  ans=B  B:5*
+        [GPQA] Quantum Mechanics
+        Consider a system with Hamiltonian operator $H = \varepsilon \vec...
+
+  Q357  100%  ans=A  A:5*
+        [MMLU] college_physics
+        The eigenvalues of a Hermitian operator are always...
+
+  Q358  100%  ans=A  A:5*
+        [MMLU] college_biology
+        Brood parasites such as the cuckoo successfully trick other speci...
+
+  Q360  100%  ans=A  A:5*
+        [MMLU] professional_law
+        One morning in a Laundromat, a defendant approached a man and sai...
+
+  Q361  100%  ans=A  A:5*
+        [MMLU] professional_law
+        A man went shopping to buy a used car. He found one on a used car...
+
+  Q362   80%  ans=C  A:1   C:4*
+        [MMLU] professional_medicine
+        An 18-year-old primigravid woman comes for her initial prenatal v...
+
+  Q364  100%  ans=C  C:5*
+        [MMLU] professional_law
+        On February 1, a homeowner entered into a contract with a famous ...
+
+  Q368  100%  ans=B  B:5*
+        [MMLU] professional_law
+        A man works at a tire warehouse, where his job duties consist of ...
+
+  Q373  100%  ans=B  B:5*
+        [MMLU] professional_law
+        A retiree was the record title owner in fee simple absolute of a ...
+
+  Q374  100%  ans=A  A:5*
+        [GPQA] Molecular Biology
+        You identified a new quorum-sensing peptide in the bacteria Lacto...
+
+  Q375  100%  ans=A  A:5*
+        [MMLU] professional_accounting
+        Which of the following characteristics most likely would heighten...
+
+  Q377  100%  ans=D  D:5*
+        [GPQA] Optics and Acoustics
+        Consider an aperture, which shapes like a N-sided polygon. All th...
+
+  Q378  100%  ans=D  D:5*
+        [MMLU] professional_medicine
+        A 72-year-old man comes to the physician because of a 7-month his...
+
+  Q380  100%  ans=B  B:5*
+        [MMLU] professional_medicine
+        A 19-year-old Asian female college student comes to the universit...
+
+  Q381  100%  ans=B  B:5*
+        [MMLU] professional_law
+        A state has recently released medical statistics showing that the...
+
+  Q382  100%  ans=B  B:5*
+        [MMLU] professional_accounting
+        In assessing the tolerable rate of deviations of a test of contro...
+
+  Q384  100%  ans=D  D:5*
+        [GPQA] Relativistic Mechanics
+        A light beam is propagating through a glass with index of refract...
+
+  Q388  100%  ans=C  C:5*
+        [GPQA] Astrophysics
+        Among the following exoplanets, which one has the highest density...
+
+  Q389   80%  ans=D  B:1   D:4*
+        [MMLU] college_medicine
+        A hedonic teenager of wayward morals, in one night, sequentially ...
+
+  Q391  100%  ans=C  C:5*
+        [MMLU] college_mathematics
+        Let y = f(x) be a solution of the differential equation x dy + (y...
+
+  Q393  100%  ans=B  B:5*
+        [MMLU] professional_medicine
+        A healthy 4-year-old girl is brought for a well-child examination...
+
+  Q394  100%  ans=D  D:5*
+        [MMLU] professional_law
+        A seat in a movie theater collapsed, causing the customer sitting...
+
+  Q395  100%  ans=A  A:5*
+        [MMLU] professional_medicine
+        A 32-year-old woman, gravida 3, para 2, at 41 weeks' gestation is...
+
+  Q396  100%  ans=C  C:5*
+        [MMLU] college_mathematics
+        Let S be a compact topological space, let T be a topological spac...
+
+  Q398   80%  ans=A  A:4*  C:1 
+        [MMLU] professional_law
+        One year ago, while driving through an intersection, the defendan...
+
+  ----------------------------------------------------------------------------
+  MEDIUM QUESTIONS (2-3/5 correct — model is uncertain)
+  82 questions
+  ----------------------------------------------------------------------------
+
+  Q2     40%  ans=D  A:1   B:1   C:1   D:2*
+        [GPQA] Organic Chemistry
+        The reaction of an electron pair donor, nucleophile (Nu) with an ...
+
+  Q10    40%  ans=B  A:1   B:2*  C:1   D:1 
+        [GPQA] Genetics
+        You perform a high-throughput experiment on white lupine to find ...
+
+  Q13    60%  ans=D  C:2   D:3*
+        [MMLU] professional_medicine
+        A 64-year-old man with non-Hodgkin lymphoma comes to the physicia...
+
+  Q14    60%  ans=D  A:1   C:1   D:3*
+        [GPQA] Molecular Biology
+        You want to study the role of the GADD45G protein in a mouse mode...
+
+  Q19    40%  ans=D  A:1   B:2   D:2*
+        [GPQA] Organic Chemistry
+        A benzene ring has a carboxylic acid a carbaldehyde and a cyano g...
+
+  Q20    40%  ans=C  A:3   C:2*
+        [MMLU] college_mathematics
+        The maximum number of acute angles in a convex 10-gon in the Eucl...
+
+  Q21    60%  ans=B  B:3*  D:2 
+        [GPQA] Quantum Mechanics
+        We have a large ensemble of 10.000 (ten thousand) identical syste...
+
+  Q37    60%  ans=C  C:3*  D:2 
+        [MMLU] professional_law
+        One morning, a woman telephoned her next-door neighbor and asked ...
+
+  Q48    60%  ans=C  A:2   C:3*
+        [GPQA] Genetics
+        You have an interesting drought-resistant cultivar of barley, whi...
+
+  Q54    40%  ans=D  A:3   D:2*
+        [MMLU] professional_medicine
+        A 47-year-old man comes to the physician 12 hours after the sudde...
+
+  Q58    60%  ans=A  A:3*  C:2 
+        [GPQA] Organic Chemistry
+        Enamine reactions include nucleophilic substitutions, electrophil...
+
+  Q63    40%  ans=B  A:1   B:2*  C:1   D:1 
+        [GPQA] Chemistry (general)
+        reaction of solid A with 8 equivalents of gas B forms bright red ...
+
+  Q85    40%  ans=C  A:3   C:2*
+        [GPQA] High-energy particle physics
+        What is the energy of the Relativistic Heavy Ion Collider (RHIC) ...
+
+  Q92    40%  ans=C  A:1   C:2*  D:2 
+        [GPQA] Organic Chemistry
+        An organic chemist performs two reactions. Reaction I: (S)-5-meth...
+
+  Q94    40%  ans=B  A:1   B:2*  C:2 
+        [GPQA] Organic Chemistry
+        acetic acid is treated with bromine, pyridine, and acetic anhydri...
+
+  Q95    60%  ans=D  A:2   D:3*
+        [GPQA] Organic Chemistry
+        A dicarboxylic acid containing a cis-alkene was dehydrated to the...
+
+  Q97    40%  ans=C  A:3   C:2*
+        [GPQA] Chemistry (general)
+        We would like to dissolve (at 25°С) 0.1 g Fe(OH)3 in 100 cm3 tota...
+
+  Q100   60%  ans=D  A:2   D:3*
+        [MMLU] professional_law
+        An investor owned substantial oil and mineral interests in the Ro...
+
+  Q104   40%  ans=B  A:3   B:2*
+        [MMLU] college_physics
+        Blue light of wavelength 480 nanometers is most strongly reflecte...
+
+  Q106   60%  ans=D  A:1   C:1   D:3*
+        [GPQA] Organic Chemistry
+        A compound with the molecular formula C8H9NO and the given NMR da...
+
+  Q112   40%  ans=D  A:1   B:1   C:1   D:2*
+        [MMLU] professional_law
+        A developer is the owner of a parcel of land in fee simple absolu...
+
+  Q123   40%  ans=D  A:2   C:1   D:2*
+        [GPQA] Quantum Mechanics
+        Calculate the amount of non-Gaussianity(nG) in the Schrödinger ca...
+
+  Q127   60%  ans=C  A:2   C:3*
+        [GPQA] Organic Chemistry
+        Identify the starting material, A, in the following reaction. A +...
+
+  Q134   60%  ans=C  A:1   C:3*  D:1 
+        [GPQA] Organic Chemistry
+        How many of the following compounds will exhibit optical activity...
+
+  Q135   40%  ans=C  B:3   C:2*
+        [MMLU] professional_law
+        A professor, being fee simple owner of an apartment building, mad...
+
+  Q137   60%  ans=C  C:3*  D:2 
+        [GPQA] Organic Chemistry
+        Compounds that have the same molecular formula but are different ...
+
+  Q138   40%  ans=C  A:1   B:1   C:2*  D:1 
+        [GPQA] Electromagnetism and Photonics
+        In a parallel universe where a magnet can have an isolated North ...
+
+  Q139   40%  ans=A  A:2*  C:1   D:2 
+        [GPQA] Physics (general)
+        Two stars are being studied. It has been observed that iron atoms...
+
+  Q140   60%  ans=C  B:2   C:3*
+        [GPQA] Organic Chemistry
+        How many stereoisomers are there for the compound 6-chloro-9-ethy...
+
+  Q162   60%  ans=C  B:1   C:3*  D:1 
+        [GPQA] Chemistry (general)
+        Determine the pH of the solution of 500 mL of 0.1 M CH3COOH, 400 ...
+
+  Q168   40%  ans=D  A:1   C:2   D:2*
+        [GPQA] Physics (general)
+        Astronomers are searching for exoplanets around two stars with ex...
+
+  Q170   40%  ans=B  A:1   B:2*  C:2 
+        [GPQA] Organic Chemistry
+        Which of the following molecules is formed when 5-butylnona-2,6-d...
+
+  Q178   60%  ans=D  C:2   D:3*
+        [MMLU] college_mathematics
+        Let C be the circle in the yz-plane whose equation is (y - 3)^2 +...
+
+  Q180   60%  ans=C  C:3*  D:2 
+        [GPQA] Electromagnetism and Photonics
+        Imagine an uncharged spherical conductor of radius $R$ having a s...
+
+  Q197   40%  ans=A  A:2*  C:2   D:1 
+        [GPQA] Molecular Biology
+        Congratulations, you just landed your dream job at one of the top...
+
+  Q211   60%  ans=B  A:1   B:3*  C:1 
+        [GPQA] Organic Chemistry
+        What is the major outcome of the reaction between 4,4-dimethylcyc...
+
+  Q212   40%  ans=D  A:2   C:1   D:2*
+        [GPQA] High-energy particle physics
+        A synchrocyclotron is a special type of cyclotron. A proton is in...
+
+  Q215   40%  ans=D  A:3   D:2*
+        [GPQA] Organic Chemistry
+        Identify the correct sequence of reagents to synthesize 1-(cycloh...
+
+  Q216   60%  ans=C  C:3*  D:2 
+        [MMLU] professional_law
+        A vintner owned a vineyard in fee simple absolute. The deed by wh...
+
+  Q217   40%  ans=A  A:2*  B:2   D:1 
+        [GPQA] Chemistry (general)
+        You have prepared an unknown organic compound. The following 1H N...
+
+  Q221   40%  ans=B  A:3   B:2*
+        [GPQA] Organic Chemistry
+        Identify compound E in the following reaction scheme. Compound A,...
+
+  Q223   60%  ans=C  A:2   C:3*
+        [GPQA] Organic Chemistry
+        3-(hydroxymethyl)-5-(prop-1-en-2-yl)cyclohexan-1-one is treated w...
+
+  Q226   40%  ans=A  A:2*  B:2   D:1 
+        [GPQA] Quantum Mechanics
+        Consider a bound system of two nucleons (NN) in a 1S0 state which...
+
+  Q231   40%  ans=A  A:2*  C:1   D:2 
+        [GPQA] Chemistry (general)
+        You have prepared a di-substituted 6-membered aromatic ring compo...
+
+  Q232   40%  ans=C  A:3   C:2*
+        [GPQA] Physics (general)
+        Astronomers are interested in the luminosities of two stars. Star...
+
+  Q245   40%  ans=A  A:2*  B:2   C:1 
+        [GPQA] Quantum Mechanics
+        You are studying a nuclear decay which converts two heavy nucleon...
+
+  Q262   40%  ans=C  B:3   C:2*
+        [GPQA] Organic Chemistry
+        benzene is treated with HNO3 and H2SO4, forming product 1. produc...
+
+  Q263   40%  ans=C  A:2   B:1   C:2*
+        [GPQA] Organic Chemistry
+        What is the index of hydrogen deficiency of the product obtained ...
+
+  Q264   40%  ans=A  A:2*  B:2   C:1 
+        [GPQA] Organic Chemistry
+        A chemist performed two reactions by taking two unknown compounds...
+
+  Q268   40%  ans=D  A:1   B:2   D:2*
+        [GPQA] High-energy particle physics
+        Consider the extension of the Standard Model given by the followi...
+
+  Q279   40%  ans=D  A:1   C:2   D:2*
+        [GPQA] Organic Chemistry
+        The Pinacol-Pinacolone rearrangement is a chemical reaction invol...
+
+  Q282   60%  ans=A  A:3*  C:1   D:1 
+        [GPQA] Relativistic Mechanics
+        While designing a high-resolution transmission electron microscop...
+
+  Q290   60%  ans=B  B:3*  D:2 
+        [MMLU] professional_law
+        A witness lived next door to a victim. Late one night, the witnes...
+
+  Q292   40%  ans=A  A:2*  C:2   D:1 
+        [GPQA] Organic Chemistry
+        Identify the number of 13C-NMR signals produced by the final prod...
+
+  Q293   40%  ans=A  A:2*  B:1   C:2 
+        [GPQA] Electromagnetism and Photonics
+        Imagine a point charge q is moving with a trajectory $\vec{s}(t)$...
+
+  Q302   40%  ans=A  A:2*  C:3 
+        [GPQA] Quantum Mechanics
+        The state of a system at time t is given by the column matrix hav...
+
+  Q304   40%  ans=D  A:2   C:1   D:2*
+        [GPQA] Organic Chemistry
+        cyclooctatetraene was heated with maleic anhydride in a 1:1 ratio...
+
+  Q305   60%  ans=D  A:1   C:1   D:3*
+        [GPQA] Quantum Mechanics
+        A quantum mechanical particle of mass m moves in two dimensions i...
+
+  Q306   60%  ans=C  A:2   C:3*
+        [GPQA] Organic Chemistry
+        Identify the possible product when (1S,4R)-2-vinyl-2-azabicyclo[2...
+
+  Q307   40%  ans=C  A:2   B:1   C:2*
+        [GPQA] Organic Chemistry
+        Determine the starting material needed to synthesize 5-isopropyl-...
+
+  Q309   40%  ans=B  A:1   B:2*  C:2 
+        [MMLU] professional_law
+        In 1888, a landowner owned a dairy farm. The landowner conveyed t...
+
+  Q320   40%  ans=B  A:2   B:2*  C:1 
+        [GPQA] Organic Chemistry
+        Compound A (C3H6) undergoes bromination in the presence of carbon...
+
+  Q328   60%  ans=A  A:3*  C:2 
+        [GPQA] Physics (general)
+        The angular size of the event horizon of a supermassive black hol...
+
+  Q334   60%  ans=D  A:1   C:1   D:3*
+        [MMLU] college_chemistry
+        Which of the following statements is not a reason why tetramethyl...
+
+  Q343   40%  ans=A  A:2*  C:3 
+        [GPQA] Physics (general)
+        An atomic nucleus of mass M is at rest with rest-mass energy of 3...
+
+  Q344   40%  ans=C  A:3   C:2*
+        [GPQA] Chemistry (general)
+        You have prepared a di-substituted 6-membered aromatic ring compo...
+
+  Q345   40%  ans=D  A:1   C:2   D:2*
+        [GPQA] Organic Chemistry
+        The Cope rearrangement is a chemical reaction where a 1,5-diene m...
+
+  Q347   60%  ans=C  C:3*  D:2 
+        [MMLU] professional_law
+        A police officer was employed on a city's police force for 10 yea...
+
+  Q348   60%  ans=A  A:3*  B:1   C:1 
+        [GPQA] High-energy particle physics
+        The universe is filled with the Cosmic Microwave Background. Cons...
+
+  Q353   60%  ans=A  A:3*  D:2 
+        [GPQA] Physics (general)
+        Consider an isolated system of 13 identical particles each with c...
+
+  Q354   60%  ans=A  A:3*  C:2 
+        [GPQA] Chemistry (general)
+        Calculate the enthalpy of formation of (CH3)2C=CH-CH2-CH(CH3)-CH2...
+
+  Q356   60%  ans=C  A:2   C:3*
+        [MMLU] college_mathematics
+        If f : (0, 1) → (0, 1], then which of the following could be TRUE...
+
+  Q359   40%  ans=A  A:2*  B:3 
+        [GPQA] Electromagnetism and Photonics
+        Consider an oscillating charge distribution, which is spheroid in...
+
+  Q366   40%  ans=D  A:2   C:1   D:2*
+        [MMLU] professional_accounting
+        Which of the following would a successor auditor ask the predeces...
+
+  Q369   60%  ans=B  A:2   B:3*
+        [GPQA] Organic Chemistry
+        Compound X, which has the following IR and NMR data, reacts with ...
+
+  Q370   40%  ans=A  A:2*  B:1   C:1   D:1 
+        [GPQA] Molecular Biology
+        You identified a new ligand-receptor pair initially expressed in ...
+
+  Q371   40%  ans=C  A:2   C:2*  D:1 
+        [GPQA] Organic Chemistry
+        When saturated epoxides are reacted with organocuprates, the alky...
+
+  Q376   40%  ans=B  A:1   B:2*  C:1   D:1 
+        [GPQA] Organic Chemistry
+        Identify the EXO product of the following [4+2] cycloaddition rea...
+
+  Q379   60%  ans=C  A:2   C:3*
+        [GPQA] Relativistic Mechanics
+        Consider the following metric:  ds^{2}=\frac{32}{\left(4-x^{2}-y^...
+
+  Q385   60%  ans=A  A:3*  B:2 
+        [GPQA] Astrophysics
+        Astronomers are currently observing a star with a radius equal to...
+
+  Q387   40%  ans=D  A:2   C:1   D:2*
+        [GPQA] Organic Chemistry
+        toluene is treated with nitric acid and sulfuric acid, forming pr...
+
+  Q390   60%  ans=A  A:3*  B:1   C:1 
+        [GPQA] Astrophysics
+        Astronomers are observing a planet with a radius of 1 Earth radiu...
+
+  ----------------------------------------------------------------------------
+  HARD QUESTIONS (0-1/5 correct — model doesn't know the answer)
+  101 questions
+  ----------------------------------------------------------------------------
+
+  Q1      0%  ans=B  A:1   C:4 
+        [GPQA] Organic Chemistry
+        Determine the product obtained when 3,4-dimethylhexanedial is rea...
+
+  Q5      0%  ans=B  A:2   C:2   D:1 
+        [GPQA] Organic Chemistry
+        Complete the following reactions and select the major products by...
+
+  Q12    20%  ans=B  A:1   B:1*  D:3 
+        [MMLU] professional_accounting
+        An accountant compiles the financial statements of a nonissuer an...
+
+  Q15     0%  ans=C  A:2   B:1   D:2 
+        [GPQA] Organic Chemistry
+        Identify product D in the following series of reactions. 5-bromo-...
+
+  Q22    20%  ans=C  A:4   C:1*
+        [GPQA] Quantum Mechanics
+        Let there be a diatomic molecule, with elements X and Y, that can...
+
+  Q23     0%  ans=C  D:5 
+        [MMLU] college_medicine
+        After what period of time does maximal dynamic exercise become pr...
+
+  Q24    20%  ans=A  A:1*  B:1   C:2   D:1 
+        [GPQA] Quantum Mechanics
+        Let |alpha> be the state describing an electron, such that it is ...
+
+  Q26    20%  ans=A  A:1*  B:3   C:1 
+        [GPQA] Molecular Biology
+        "Scientist aims to run quantitative polymerase chain reaction (qP...
+
+  Q34     0%  ans=A  B:1   D:4 
+        [GPQA] Organic Chemistry
+        By considering different factors like heat, acidic and basic medi...
+
+  Q35     0%  ans=B  A:4   D:1 
+        [MMLU] professional_law
+        A brick mason was hired by a builder under a written one-year con...
+
+  Q40     0%  ans=D  A:4   B:1 
+        [GPQA] Chemistry (general)
+        We have a solution which has the volume of 200.00 cm3 and contain...
+
+  Q41     0%  ans=B  A:5 
+        [MMLU] college_medicine
+        A patient comes into the ER looking extremely agitated. They are ...
+
+  Q42     0%  ans=A  C:5 
+        [MMLU] professional_law
+        A plaintiff filed a civil action asking for damages resulting fro...
+
+  Q43    20%  ans=A  A:1*  B:1   D:3 
+        [GPQA] Astrophysics
+        How many of the stars listed below would be detectable using the ...
+
+  Q44     0%  ans=D  A:4   C:1 
+        [GPQA] Physics (general)
+        Consider the Y-component of the intrinsic angular momentum operat...
+
+  Q46    20%  ans=D  B:1   C:3   D:1*
+        [GPQA] Astrophysics
+        Two planets have been detected orbiting a star using both the tra...
+
+  Q49    20%  ans=C  A:3   B:1   C:1*
+        [GPQA] Organic Chemistry
+        Which sequence of reactions from the following options would lead...
+
+  Q53     0%  ans=D  A:1   B:1   C:3 
+        [MMLU] college_chemistry
+        A PO3- radical produces a pair of lines separated by 280 MHz with...
+
+  Q57    20%  ans=B  A:2   B:1*  C:1   D:1 
+        [GPQA] Organic Chemistry
+        Racemic 3-methylpent-1-ene is treated with Grubbs catalyst. How m...
+
+  Q66     0%  ans=B  A:3   C:2 
+        [GPQA] Molecular Biology
+        You come across an algorithm that gives the following output (wri...
+
+  Q70     0%  ans=B  D:5 
+        [MMLU] professional_law
+        A woman and her neighbor had often talked about the need for a fe...
+
+  Q72     0%  ans=C  A:1   D:4 
+        [MMLU] professional_accounting
+        Subsequent to issuing a report on audited financial statements, a...
+
+  Q74     0%  ans=D  C:5 
+        [MMLU] professional_law
+        A company created a drug to lower high blood pressure. The Presid...
+
+  Q79    20%  ans=B  A:3   B:1*  C:1 
+        [GPQA] Organic Chemistry
+        cyclohexanone is treated with LDA at low temperature, followed by...
+
+  Q89    20%  ans=B  A:2   B:1*  C:2 
+        [GPQA] Organic Chemistry
+        Identify the compound C9H11NO2 using the given data. IR: medium t...
+
+  Q96    20%  ans=B  A:1   B:1*  C:1   D:2 
+        [GPQA] Organic Chemistry
+        A chemist performs two reactions:  Reaction 1: (E)-oct-4-ene is t...
+
+  Q98     0%  ans=A  D:5 
+        [GPQA] Genetics
+        In an inactive state, a transcription factor subunit awaits an ac...
+
+  Q103    0%  ans=D  A:1   B:4 
+        [MMLU] professional_law
+        A tenant was cleaning out the bedroom of his apartment as his lea...
+
+  Q108    0%  ans=C  A:5 
+        [MMLU] professional_law
+        In a tavern, an intoxicated woman threatened to slash a man with ...
+
+  Q117   20%  ans=B  B:1*  D:4 
+        [GPQA] Electromagnetism and Photonics
+        If a charge q is placed d distance away from the center of a grou...
+
+  Q121   20%  ans=C  A:4   C:1*
+        [GPQA] High-energy particle physics
+        In the CERN Bubble Chamber a decay occurs, $X^{0}\rightarrow Y^{+...
+
+  Q124    0%  ans=A  B:1   C:3   D:1 
+        [GPQA] Chemistry (general)
+        In an industrial research lab, a scientist performs ethylene poly...
+
+  Q128   20%  ans=D  A:2   B:1   C:1   D:1*
+        [GPQA] Astrophysics
+        Very large number of neutrinos produced by the Sun reach the Eart...
+
+  Q129    0%  ans=D  A:4   C:1 
+        [GPQA] Quantum Mechanics
+        Imagine an operator $\vec{P}$ of a system have components $P_x, P...
+
+  Q130   20%  ans=D  A:2   C:2   D:1*
+        [GPQA] Quantum Mechanics
+        Calculate the eigenvector of a quantum mechanical operator $\vec{...
+
+  Q141   20%  ans=D  C:4   D:1*
+        [GPQA] Organic Chemistry
+        1-bromobenzene-2-d is treated with NaNH2 in condensed ammonia sol...
+
+  Q142    0%  ans=D  C:5 
+        [MMLU] professional_law
+        A shopper sued a supermarket for injuries allegedly suffered from...
+
+  Q146   20%  ans=A  A:1*  C:3   D:1 
+        [GPQA] Molecular Biology
+        You want to create a mouse embryonic chimera with induced pluripo...
+
+  Q147   20%  ans=B  B:1*  C:2   D:2 
+        [MMLU] professional_law
+        A state statute provides: "Whenever a person knows or should know...
+
+  Q148   20%  ans=B  A:1   B:1*  C:3 
+        [GPQA] Organic Chemistry
+        Compound A shows two signals in the proton NMR, a triplet at 0.9 ...
+
+  Q149   20%  ans=A  A:1*  B:2   C:1   D:1 
+        [GPQA] Organic Chemistry
+        7-(tert-butoxy)bicyclo[2.2.1]hepta-2,5-diene is combined with 2 e...
+
+  Q150    0%  ans=B  A:2   C:3 
+        [GPQA] Organic Chemistry
+        A textile dye containing an extensively conjugated pi-electrons e...
+
+  Q157    0%  ans=C  A:5 
+        [GPQA] Quantum Mechanics
+        There is a spin 1/2 particle with magnetic moment mu (= gamma*Sz)...
+
+  Q164    0%  ans=B  A:1   C:2   D:2 
+        [GPQA] Organic Chemistry
+        5-fluorocyclopenta-1,3-diene is reacted with maleic anhydride. Wh...
+
+  Q165   20%  ans=A  A:1*  C:3   D:1 
+        [MMLU] professional_medicine
+        A 30-year-old nulliparous female presents to the office with the ...
+
+  Q172    0%  ans=B  A:2   D:3 
+        [GPQA] Genetics
+        Which of the following issues are the most common sources of diff...
+
+  Q175    0%  ans=C  A:4   B:1 
+        [GPQA] Organic Chemistry
+        Identify the correct sequence of reagents for the synthesis of [1...
+
+  Q177   20%  ans=D  B:4   D:1*
+        [MMLU] professional_law
+        A hiker was enjoying a journey through a large forest when he was...
+
+  Q181    0%  ans=B  A:5 
+        [GPQA] Astrophysics
+        Observations of a quasar across the electromagnetic spectrum are ...
+
+  Q186   20%  ans=B  A:1   B:1*  C:3 
+        [MMLU] professional_law
+        A rancher is the owner of a ranch that is situated upon the top o...
+
+  Q191    0%  ans=C  A:5 
+        [MMLU] professional_law
+        Farmer Fred was the owner of Grapeview Farm, the largest farm in ...
+
+  Q194    0%  ans=B  C:3   D:2 
+        [GPQA] Organic Chemistry
+        In an experiment, a researcher reacted ((2,2-dimethylbut-3-en-1-y...
+
+  Q196    0%  ans=D  C:5 
+        [MMLU] professional_law
+        A laboratory manufactures nitroglycerin (a heavy, oily, explosive...
+
+  Q198    0%  ans=A  C:5 
+        [MMLU] professional_law
+        A defendant is on trial for kidnapping. The victim has testified ...
+
+  Q205    0%  ans=B  C:5 
+        [MMLU] professional_law
+        A 35-year-old man with some experience as a truck driver owned a ...
+
+  Q208    0%  ans=C  A:5 
+        [MMLU] professional_law
+        A driver of a car negligently hit a pedestrian. The pedestrian ha...
+
+  Q213    0%  ans=D  C:5 
+        [MMLU] professional_law
+        One day, while riding his motorcycle through a residential area, ...
+
+  Q214    0%  ans=B  A:2   C:2   D:1 
+        [GPQA] Organic Chemistry
+        1,3-dibromoadamantane is heated to 240C with an excess of KOH, cr...
+
+  Q222    0%  ans=B  D:5 
+        [MMLU] professional_law
+        In which of the following situations would the actions of the def...
+
+  Q224    0%  ans=B  A:4   D:1 
+        [GPQA] Quantum Mechanics
+        Four identical spin-1/2 particles are placed in a one-dimensional...
+
+  Q230   20%  ans=C  A:3   C:1*  D:1 
+        [GPQA] Quantum Mechanics
+        The study of quantum mechanics deals with a lot of matrices. Cons...
+
+  Q233    0%  ans=A  B:1   C:3   D:1 
+        [GPQA] Organic Chemistry
+        Identify the starting material(s) required to synthesize methyl 2...
+
+  Q236    0%  ans=D  A:1   C:4 
+        [GPQA] Chemistry (general)
+        You have prepared an unknown compound. To identify the product, y...
+
+  Q238    0%  ans=C  B:5 
+        [MMLU] professional_law
+        At trial in a criminal prosecution for theft, the defendant calls...
+
+  Q239   20%  ans=D  A:4   D:1*
+        [MMLU] professional_law
+        An employee was hired under a written contract to work for an emp...
+
+  Q240   20%  ans=D  A:2   B:1   C:1   D:1*
+        [GPQA] Organic Chemistry
+        The Michael reaction is a chemical process in organic chemistry w...
+
+  Q247    0%  ans=A  C:2   D:3 
+        [GPQA] Organic Chemistry
+        Dienes are organic compounds with two adjacent double bonds in th...
+
+  Q251   20%  ans=C  A:1   B:2   C:1*  D:1 
+        [GPQA] Astrophysics
+        Observations of structures located at a distance of about 2.1 gig...
+
+  Q256   20%  ans=B  B:1*  C:4 
+        [GPQA] Organic Chemistry
+        "1,2-Rearrangement reaction in which vicinal diols are allowed to...
+
+  Q259    0%  ans=D  A:2   C:3 
+        [GPQA] Organic Chemistry
+        cyclohexanone was treated with bromine, forming product 1. 1 was ...
+
+  Q260    0%  ans=B  C:2   D:3 
+        [GPQA] Organic Chemistry
+        A methanol solution of (R)-(+)-Limonene is stirred with Pd/C unde...
+
+  Q265   20%  ans=A  A:1*  C:2   D:2 
+        [MMLU] college_computer_science
+        Array A contains 256 elements of 4 bytes each. Its first element ...
+
+  Q266   20%  ans=A  A:1*  B:4 
+        [MMLU] college_chemistry
+        The equilibrium populations of the 1H energy levels of a molecule...
+
+  Q269   20%  ans=A  A:1*  B:1   C:3 
+        [GPQA] Astrophysics
+        Astronomers are studying two binary star systems: system_1 and sy...
+
+  Q271    0%  ans=C  A:3   B:1   D:1 
+        [GPQA] Organic Chemistry
+        which of the following molecules has c3h symmetry? triisopropyl b...
+
+  Q272    0%  ans=D  A:2   B:1   C:2 
+        [MMLU] college_mathematics
+        A fair coin is to be tossed 100 times, with each toss resulting i...
+
+  Q275   20%  ans=B  A:3   B:1*  D:1 
+        [GPQA] Physics (general)
+        Consider a system of three spins S1, S2 and S3. Each of which can...
+
+  Q278    0%  ans=B  A:3   C:1   D:1 
+        [GPQA] Organic Chemistry
+        Sigmatropic rearrangement is a class of pericyclic reactions. In ...
+
+  Q286    0%  ans=B  A:4   D:1 
+        [GPQA] Quantum Mechanics
+        The |3,0,0\rangle state in the standard notation |n,l,m\rangle of...
+
+  Q295   20%  ans=B  A:3   B:1*  C:1 
+        [GPQA] Inorganic Chemistry
+        An equimolar mixture of salts A and B weighing 7.20 g was heated ...
+
+  Q296   20%  ans=B  A:1   B:1*  D:3 
+        [GPQA] Chemistry (general)
+        Five binary compounds of fluorine with element Y are known. The b...
+
+  Q300    0%  ans=B  A:5 
+        [MMLU] professional_law
+        A construction worker sued an insulation manufacturer in federal ...
+
+  Q314   20%  ans=B  A:2   B:1*  C:2 
+        [GPQA] Physics (general)
+        Consider a rhombohedral crystal, with the interatomic distance of...
+
+  Q315    0%  ans=B  D:5 
+        [MMLU] professional_law
+        A driver was severely injured when his car burst into flames afte...
+
+  Q318    0%  ans=D  A:3   C:2 
+        [GPQA] Astrophysics
+        Astronomers are studying a star with a 1.5 solar radius and 1.1 s...
+
+  Q319   20%  ans=B  A:2   B:1*  D:2 
+        [GPQA] Organic Chemistry
+        If an equimolar mixture X of two liquids, which decolorizes bromi...
+
+  Q325    0%  ans=C  A:2   B:2   D:1 
+        [GPQA] Organic Chemistry
+        Which sequence of reactions from the following options would lead...
+
+  Q327   20%  ans=D  A:2   B:2   D:1*
+        [GPQA] Organic Chemistry
+        Substance X, known for incorporating a heavier isotope of one of ...
+
+  Q331   20%  ans=B  A:1   B:1*  C:2   D:1 
+        [GPQA] Organic Chemistry
+        A student performed an acid-catalyzed reaction of 3-methylpyrroli...
+
+  Q332    0%  ans=B  A:2   C:2   D:1 
+        [GPQA] Organic Chemistry
+        3,3,6-trimethylhepta-1,5-dien-4-one is treated with 1 equivalent ...
+
+  Q337   20%  ans=C  A:2   B:1   C:1*  D:1 
+        [GPQA] Astrophysics
+        Which of the following stars can be detected with both the ESPRES...
+
+  Q341    0%  ans=D  A:5 
+        [GPQA] Molecular Biology
+        Imagine a situation where a novel natural molecule, Xantheraquin,...
+
+  Q346   20%  ans=D  A:1   C:3   D:1*
+        [GPQA] Quantum Mechanics
+        Given the measured phase shifts $\delta_o=90^o, \delta_1=67^o, \d...
+
+  Q363    0%  ans=B  A:3   C:1   D:1 
+        [GPQA] Chemistry (general)
+        The 1H NMR spectrum of a solution containing a 1:1 mixture of two...
+
+  Q365    0%  ans=B  C:5 
+        [GPQA] Organic Chemistry
+        In an experiment, compound X (C11H12O) was subjected to a reactio...
+
+  Q367    0%  ans=B  A:4   D:1 
+        [GPQA] Physics (general)
+        Two stars (Star_1 and Star_2) each have masses 1.5 and 1.2 times ...
+
+  Q372    0%  ans=D  A:3   C:2 
+        [GPQA] Chemistry (general)
+        We have a solution containing Co(II) ions and thiocyanate, where ...
+
+  Q383    0%  ans=A  D:5 
+        [MMLU] professional_law
+        A noted author was writing a screenplay that he was adapting from...
+
+  Q386    0%  ans=C  A:1   B:2   D:2 
+        [GPQA] Organic Chemistry
+        α-β unsaturated carbonyls have a much more electrophilic carbon d...
+
+  Q392    0%  ans=B  A:2   C:3 
+        [GPQA] Chemistry (general)
+        We dilute 20.00 cm3 0.05 M acetic acid with 20.00 cm3 water, then...
+
+  Q397    0%  ans=D  A:3   B:2 
+        [GPQA] Organic Chemistry
+        Two compounds A and B are treated separately with hydrochloric ac...
+
+================================================================================
+  * = correct answer in the distribution
+================================================================================
